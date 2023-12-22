@@ -30,6 +30,12 @@ nav ul{
     justify-items: center;
     align-items: center;
 }
+nav ul div{
+    display: block;
+    height: 12px;
+    width: 0.5px;
+    border: 1px solid #fff;
+}
 header a{
     text-decoration: none;
     color: #fff;
