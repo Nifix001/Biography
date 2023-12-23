@@ -49,8 +49,20 @@ nav ul li{
 nav ul li:hover{
     background-color: #e0b982;
 }
+nav button{
+    font-size: 14px;
+    padding: 7px 14px;
+    background: transparent;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+nav button:hover{
+    scale: 1.05;
+}
 
-footer{
+footer, .footer{
     background-color: darkorchid;
     padding: 12px 8px;
     display: flex;
@@ -63,22 +75,22 @@ footer{
     color: #fff;
 }
 
-footer h3{
+footer h3, .footer h3{
     text-align: center;
 }
 
-footer a{
+footer a, .footer a{
     text-decoration: none;
     color: #fff;
 }
-footer ul {
+footer ul, .footer ul{
     list-style-type: none; 
 }
 /* copy{
     color: #fff;
     text-align: center;
 } */
-footer p{
+footer p, .footer p{
     position: absolute;
     display: block;
     bottom: 4px;
