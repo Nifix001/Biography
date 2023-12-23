@@ -15,7 +15,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffc87c;
-    padding: 2px 8px;
+    /* padding: 2px 8px; */
+    /* position: fixed; */
 }
 
 header a{
@@ -34,6 +35,10 @@ nav{
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
+    position: fixed;
+    top: 0;
+    background-color: #ffc87c;
+    margin: 0;
 }
 nav ul{
     list-style-type: none;
@@ -54,7 +59,7 @@ nav ul li{
 }
 nav ul li:hover{
     background-color: #e0b982;
-    scale: 1.07;
+    transform: scale(1.07);
 }
 nav button{
     font-size: 14px;
@@ -66,7 +71,7 @@ nav button{
     cursor: pointer;
 }
 nav button:hover{
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 footer, .footer{
