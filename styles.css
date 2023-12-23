@@ -50,6 +50,7 @@ nav ul div{
 }
 nav ul li{
     padding: 6px 12px;
+    border-radius: 5px;
 }
 nav ul li:hover{
     background-color: #e0b982;
