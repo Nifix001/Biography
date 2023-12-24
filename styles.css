@@ -99,6 +99,11 @@ footer a, .footer a{
 }
 footer ul, .footer ul{
     list-style-type: none; 
+    font-size: small;
+    margin-top: -10px;
+}
+footer ul i, .footer ul i{
+    margin-right: 3px;
 }
 /* copy{
     color: #fff;
