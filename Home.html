@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap">
     <script src="https://kit.fontawesome.com/44146660f3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <header>
@@ -154,44 +155,33 @@
                 closeModal();
             }
         });
-        // Nodemailer script
-        const nodemailer = require('nodemailer');
+        $(document).ready(function () {
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("contact");
 
-        // Create a transporter
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'ladayodeji@gmail.com', // Your email address
-                pass: 'Obafemi123' // Use the generated App Password here
+            // ... (your existing code for modal)
+
+            function sendEmail(email, message) {
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:3000/send-email', // Change this URL to your server's URL
+                data: { email, message },
+                success: function (response) {
+                console.log(response);
+                },
+                error: function (error) {
+                console.error(error);
+                },
+            });
             }
-        });
 
-        // Function to send email
-        function sendEmail() {
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
             var messenger = document.getElementById("email");
             var message = document.getElementById("message");
-
-            const mailOptions = {
-                from: messenger.value, // Use the email address from the form
-                to: 'ladayodeji@gmail.com',
-                subject: 'New Message from Your Website',
-                text: message.value // Use the message from the form
-            };
-
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    console.error(error);
-                } else {
-                    console.log('Email sent: ' + info.response);
-                }
+            sendEmail(messenger.value, message.value);
+            closeModal();
             });
-        }
-
-        // Add an event listener for the form submission
-        document.querySelector('form').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent the default form submission
-            sendEmail(); // Call the function to send the email
-            closeModal(); // Close the modal after sending the email
         });
     </script>
 </body>
