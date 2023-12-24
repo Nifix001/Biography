@@ -162,6 +162,7 @@ article{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    padding: 10px;
 }
 
 .email-contact, .contact-message{
