@@ -210,3 +210,24 @@ article{
     margin: 3px;
     padding: 8px 12px;
 }
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.him {
+    width: 20%;
+}
+.intro{
+    width: 70%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
