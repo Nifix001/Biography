@@ -213,21 +213,43 @@ article{
 
 #about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    justify-content: center;
+    place-items: center;
+}
+
+.intro{
+    width: 70%;
+    grid-column: 1;
 }
 
 .him {
     width: 20%;
-}
-.intro{
-    width: 70%;
+    grid-column: 2;
 }
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.image-div{
+    width: 100%;
+    height: 100%;
+}
+
+.intro a{
+    font-size: 14px;
+    padding: 7px 14px;
+    background: #b3842b;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.intro a:hover{
+    scale: 1.5;
 }
