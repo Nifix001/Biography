@@ -211,7 +211,7 @@ article{
     padding: 8px 12px;
 }
 
-#about {
+#about, #influence, #work, #hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
