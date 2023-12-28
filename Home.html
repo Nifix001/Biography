@@ -103,23 +103,23 @@
 
     <section id="gallery">
         <h2>Gallery</h2>
-        <div class="gallery">
-            <div class="image-div">
-                <img src="images\download.jpeg" alt="Philip's pictures"\>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="slider-container">
+            <div class="image-div active">
+                <img src="images\download.jpeg" alt="Philip's pictures">
             </div>
             <div class="image-div">
                 <img src="images\images (1).jpeg" alt="Philip's pictures">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div class="image-div">
                 <img src="images\images (3).jpeg" alt="Philip's pictures" height="280px">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div class="image-div">
                 <img src="images\download.jpeg" alt="Philip's pictures" >
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
+        </div>
+        <div class="navigation">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
         </div>
     </section>
 
@@ -156,6 +156,21 @@
     </footer>
 
     <script>
+        const slides = document.querySelectorAll('.image-div');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentSlide = 0;
+
+        function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
         // Get the modal and the button that opens it
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("contact"); // Assuming your Contact button is a <button> element
