@@ -209,7 +209,7 @@ article{
     padding: 8px 12px;
 }
 
-#about, #influence, #work, #hero {
+#about, #influence, #work, #hero, #news {
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
@@ -368,6 +368,10 @@ article{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+  .card-content button a{
+    text-decoration: none;
+    color: #fff;
   }
 
   .card-content button:hover{
