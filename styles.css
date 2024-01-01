@@ -266,7 +266,7 @@ article{
   
   .wrapper{
     display: flex;
-    max-width: 1200px;
+    max-width: 100%;
     position: relative;
   }
   .wrapper i{
@@ -316,6 +316,8 @@ article{
     user-select: none;
     margin-left: 14px;
     width: 300px;
+    object-fit: cover;
+    aspect-ratio: square;
   }
   .carousel img:first-child{
     margin-left: 0px;
