@@ -226,7 +226,7 @@ article{
 #news,#gallery {
   border-radius: 10px;
 }
-#gallery div{
+#gallery div, #news div{
   justify-content: space-between;
   display: flex;
   align-items: end;
