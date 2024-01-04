@@ -226,16 +226,22 @@ article{
 #news,#gallery {
   border-radius: 10px;
 }
-
+#gallery div{
+  justify-content: space-between;
+  display: flex;
+  align-items: end;
+}
 #gallery a{
   text-decoration: none;
   color: black;
+  padding-right: 20px;
 }
 #gallery a:visited{
   text-decoration: none;
 }
 #gallery a:hover{
   color: #000;
+  text-decoration: underline;
 }
 
 .intro{
@@ -410,4 +416,6 @@ article{
   .image-grid img{
     width: 100%;
     height: 100%;
+    aspect-ratio: sqaure;
+    object-fit: cover;
   }
