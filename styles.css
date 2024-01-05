@@ -379,11 +379,16 @@ article{
   
   .card-content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: space-between;
   }
   
   .card-content h2 {
     margin-top: -10px;
+    font-size: 25px;
+    font-weight: 500;
   }
   
   .card-content button {
@@ -393,6 +398,7 @@ article{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
   }
   .card-content button a{
     text-decoration: none;
