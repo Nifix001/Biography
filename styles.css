@@ -409,8 +409,10 @@ article{
     transform: scale(1.05);
   }
 
-  /* .image-grid-container{ */
-  /* } */
+  .image-grid-container{ 
+    font-weight: 500;
+    font-size: 28px;
+  }
 
   .image-grid{
     display: grid;
@@ -424,4 +426,32 @@ article{
     height: 100%;
     aspect-ratio: sqaure;
     object-fit: cover;
+  }
+
+  .content{
+    margin-top: -15px;
+  }
+
+  .content h2{
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+  }
+
+  .content h4{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .content ol{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+  }
+  .content p{
+    margin-top: -20px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
   }
