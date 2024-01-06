@@ -40,6 +40,9 @@ nav{
     z-index: 10;
     /* margin-bottom: 100px; */
 }
+.more-options{
+  display: none;
+}
 nav ul{
     list-style-type: none;
     display: flex;
@@ -346,21 +349,6 @@ article{
   .carousel img:first-child{
     margin-left: 0px;
   }
-  
-  @media screen and (max-width: 900px) {
-    .carousel img{
-      width: calc(100% / 2);
-      height: auto;
-    }
-  }
-  
-  @media screen and (max-width: 550px) {
-    .carousel img{
-      width: 100%;
-      height: auto;
-    }
-  }
-
   .card-container{
     display: flex;
     flex-direction: row;
@@ -470,4 +458,60 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+
+    
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 14px;
+      position: fixed;
+      top: 0;
+      background-color: #ffc87c;
+      margin: 0;
+      z-index: 10;
+    }
+    nav ul {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      width: 100%;
+      padding-right: 14px;
+      position: fixed;
+      top: 0;
+      background-color: #ffc87c;
+      margin: 0;
+      z-index: 10;
+    }
+    nav ul {
+      display: none;
+    }
+    nav button{
+      display: none;
+    }
+    .more-options{
+      font-size: 14px;
+      padding: 7px 14px;
+      background: transparent;
+      border: 2px solid white;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 30px;
+    }
   }
