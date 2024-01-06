@@ -480,6 +480,37 @@ article{
     nav ul {
       display: none;
     }
+
+    .intro{
+      width: 40%;
+      margin: 30px;
+      padding: 30px 10px;
+    }
+  
+    .him {
+      width: 60%;
+      margin: 10px;
+    }
+
+    section{
+      background-color:  #8ab4f3;
+      padding: 150px 20px;
+      margin-top: 3px;
+    }
+
+    .intro h2{
+      font-weight: 500;
+      font-size: 30px;
+      color: #000000;
+      margin-bottom: 5px;    
+  }
+  
+  .intro p{
+      font-weight: 300;
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 25px;
+  }
   }
   
   @media screen and (max-width: 550px) {
@@ -514,4 +545,36 @@ article{
       cursor: pointer;
       margin-right: 30px;
     }
+
+    .intro{
+      width: 40%;
+      margin: 30px;
+      padding: 30px 10px;
+    }
+  
+    .him {
+      width: 60%;
+      margin: 10px;
+    }
+
+    section{
+      background-color:  #8ab4f3;
+      padding: 150px 20px;
+      margin-top: 3px;
+    }
+
+    .intro h2{
+      font-weight: 500;
+      font-size: 30px;
+      color: #000000;
+      margin-bottom: 5px;    
+  }
+  
+  .intro p{
+      font-weight: 300;
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 25px;
+  }
+
   }
