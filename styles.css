@@ -273,7 +273,9 @@ article {
   width: 20%;
   margin: 20px;
 }
-
+.him2 {
+  display: none;
+}
 .intro a {
   font-size: 14px;
   padding: 10px 24px;
@@ -475,7 +477,7 @@ article {
   .carousel img {
     width: calc(100% / 2);
   }
-  nav {
+  /* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -551,7 +553,7 @@ article {
     bottom: -2px;
     left: 300px;
     font-size: small;
-  }
+  } */
 }
 
 @media screen and (max-width: 550px) {
@@ -576,6 +578,12 @@ article {
   #contact {
     display: none;
   }
+  #space {
+    width: 100vw;
+    height: 120px;
+    background-color: #8ab4f3;
+    margin-bottom: -10px;
+  }
   #more-options > svg {
     width: 50px;
     padding: 7px 14px;
@@ -591,22 +599,28 @@ article {
   #work,
   #hero {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
     height: 50vh;
     border-radius: 10px;
   }
 
   .intro {
-    width: 40%;
+    width: 70%;
     margin: 0 30px;
     padding: 30px 10px;
   }
 
-  .him {
+  .him2 {
     width: 60%;
     margin: 0 10px;
+  }
+  .him {
+    display: none;
+  }
+  .him:nth-child(2) {
+    display: block;
   }
 
   section {
