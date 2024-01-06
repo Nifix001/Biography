@@ -641,15 +641,16 @@ article {
     margin-bottom: 25px;
   }
 
-  footer,
   .footer {
     background-color: darkorchid;
-    padding: 20px 8px;
+    padding: 20px 2px;
     display: flex;
     gap: 10px;
     position: relative;
     color: #fff;
     margin-bottom: -20px;
+    width: 100vw;
+    scale: 0.75;
   }
 
   footer p,
@@ -658,6 +659,6 @@ article {
     display: block;
     bottom: -2px;
     left: 160px;
-    font-size: small;
+    font-size: 8px;
   }
 }
