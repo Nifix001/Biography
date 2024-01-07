@@ -31,7 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   /* padding-left: 14px; */
   padding-right: 14px;
   position: fixed;
@@ -41,7 +41,7 @@ nav {
   z-index: 10;
   /* margin-bottom: 100px; */
 }
-.more-options {
+#more-options {
   display: none;
 }
 nav ul {
