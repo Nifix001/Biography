@@ -534,6 +534,24 @@ article {
     border-radius: 6px;
     cursor: pointer;
   }
+  .blackScreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 20;
+  }
+  .sideBar-content {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    z-index: 21;
+  }
 
   #about,
   #influence,
