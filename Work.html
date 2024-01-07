@@ -16,20 +16,36 @@
     <header>
       <nav>
         <div>
-            <img src="images\PE logs.jpg" alt="logo" height="50px">
+          <img src="images\PE logs.jpg" alt="logo" height="50px" />
         </div>
         <ul>
           <a href="home.html"><li>Home</li></a>
           <div></div>
-          <a href="home.html#hero"><li>Hero</li></a>
+          <a href="#hero"><li>Hero</li></a>
           <div></div>
-          <a href="home.html#work"><li>Work</li></a>
+          <a href="#work"><li>Work</li></a>
           <div></div>
-          <a href="home.html#gallery"><li>Gallery</li></a>
+          <a href="#gallery"><li>Gallery</li></a>
           <div></div>
-          <a href="home.html#news"><li>Latest News</li></a>
+          <a href="#news"><li>Latest News</li></a>
         </ul>
-        <button id="contact">Contact</button>
+        <button id="contact">Contact Us</button>
+        <span id="more-options">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              stroke-width="1.5"
+            />
+          </svg>
+        </span>
       </nav>
     </header>
 
@@ -44,6 +60,7 @@
               type="text"
               id="email"
               placeholder="philipemeagwali@gmail.com"
+              autocomplete="email"
             />
           </div>
           <div class="contact-message">
@@ -55,59 +72,150 @@
       </div>
     </div>
 
-    <div class="content">
-        <section>
-          <h1>Philip Emeagwali's Work</h1>
-            <div class="img"> 
-                <img src="images\emeagwali-science-.jpg" alt="Young Phillip" width="200px">
-            </div>
-            <h2>Connection Machine and Parrallel Computing</h2>
-            <ol>
-                <li><h4>Parallel Processing Breakthrough:</h4>
-                    <p>
-                    Philip Emeagwali's significant contribution revolves around his use of the Connection Machine supercomputer to achieve unprecedented parallel processing speeds. In 1989, he conducted a computation that involved solving a complex problem related to petroleum reservoir modeling, achieving a remarkable 3.1 billion calculations per second.</p>
-                </li>
-                <li><h4>Massively Parallel Processing:</h4>
-                    <p>The Connection Machine, developed by Thinking Machines Corporation, was designed for massively parallel processing. Emeagwali harnessed the power of 65,536 processors working simultaneously, showcasing the potential of parallel computing for solving intricate scientific problems.</p>
-                </li>
-                <li><h4>Gordon Bell Prize:</h4>
-                    <p>Emeagwali's achievement earned him the Gordon Bell Prize in 1989, which is awarded for outstanding achievements in high-performance computing. This recognition highlighted the groundbreaking nature of his work and its impact on the field of supercomputing.</p>
-                </li>
-            </ol>
-        </section>
+    <div id="sideBar" class="sideBar">
+      <div class="blackScreen"></div>
+      <div class="sideBar-content">
+        <span class="close-bar">&times;</span>
+        <ul>
+          <a href="home.html" id="homeLink"><li>Home</li></a>
+          <div></div>
+          <a href="#hero" id="heroLink"><li>Hero</li></a>
+          <div></div>
+          <a href="#work" id="workLink"><li>Work</li></a>
+          <div></div>
+          <a href="#gallery" id="galleryLink"><li>Gallery</li></a>
+          <div></div>
+          <a href="#news" id="newsLink"><li>Latest News</li></a>
+          <button id="contact">Contact Us</button>
+        </ul>
+      </div>
+    </div>
 
-        <section>
-            <div class="img"> 
-                <img src="images\emeagwali_petroleum_equations_science_museum_of_minnesota_saint.jpg" alt="Young Phillip" width="200px">
-            </div>
-            <h2>Application of Computing in Sceince, Engineering and Medicine</h2>
-            <ol>
-                <li><h4>Petroleum Reservoir Modeling:</h4>
-                    <p>Emeagwali's computation on the Connection Machine was specifically applied to petroleum reservoir modeling. The ability to perform complex simulations at an unprecedented speed had significant implications for the oil and gas industry. It allowed for more accurate predictions of reservoir behavior, optimizing extraction processes.</p>
-                </li>
-                <li><h4>Weather Forecasting:</h4>
-                    <p>Parallel computing has wide applications in weather forecasting due to the complex and computationally intensive nature of climate models. Emeagwali's work showcased the potential of parallel processing for handling large-scale simulations, which is crucial for accurate weather predictions.</p>
-                </li>
-                <li><h4>Aerospace Engineering:</h4>
-                    <p>Parallel computing is extensively used in aerospace engineering for tasks such as aerodynamic simulations, structural analysis, and optimization. The ability to process vast amounts of data simultaneously enhances the efficiency of these computations.</p>
-                </li>
-                <li><h4>Medical Imaging and Research:</h4>
-                    <p>In medicine, parallel computing is employed in various applications, including medical imaging. The ability to process and analyze medical images quickly is essential for diagnostic purposes. Parallel processing can significantly reduce the time required for tasks such as MRI image reconstruction.</p>
-                </li>
-                <li><h4>Drug Discovery and Genomic Research:</h4>
-                    <p>Parallel computing plays a crucial role in drug discovery and genomic research, where large datasets need to be analyzed to identify potential drug candidates or understand genetic patterns. The speed and efficiency of parallel processing are invaluable in these scientific endeavors.</p>
-                </li>
-                <li><h4>Finite Element Analysis (FEA):</h4>
-                    <p>In engineering, particularly in fields like civil and structural engineering, finite element analysis is a common application of parallel computing. This technique is used to simulate and analyze complex structures, and parallel processing accelerates the computations involved.</p>
-                </li>
-            </ol>
-        </section>
+    <div id="space"></div>
+
+    <div class="content">
+      <section>
+        <h1>Philip Emeagwali's Work</h1>
+        <div class="img">
+          <img
+            src="images\emeagwali-science-.jpg"
+            alt="Young Phillip"
+            width="200px"
+          />
+        </div>
+        <h2>Connection Machine and Parrallel Computing</h2>
+        <ol>
+          <li>
+            <h4>Parallel Processing Breakthrough:</h4>
+            <p>
+              Philip Emeagwali's significant contribution revolves around his
+              use of the Connection Machine supercomputer to achieve
+              unprecedented parallel processing speeds. In 1989, he conducted a
+              computation that involved solving a complex problem related to
+              petroleum reservoir modeling, achieving a remarkable 3.1 billion
+              calculations per second.
+            </p>
+          </li>
+          <li>
+            <h4>Massively Parallel Processing:</h4>
+            <p>
+              The Connection Machine, developed by Thinking Machines
+              Corporation, was designed for massively parallel processing.
+              Emeagwali harnessed the power of 65,536 processors working
+              simultaneously, showcasing the potential of parallel computing for
+              solving intricate scientific problems.
+            </p>
+          </li>
+          <li>
+            <h4>Gordon Bell Prize:</h4>
+            <p>
+              Emeagwali's achievement earned him the Gordon Bell Prize in 1989,
+              which is awarded for outstanding achievements in high-performance
+              computing. This recognition highlighted the groundbreaking nature
+              of his work and its impact on the field of supercomputing.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <div class="img">
+          <img
+            src="images\emeagwali_petroleum_equations_science_museum_of_minnesota_saint.jpg"
+            alt="Young Phillip"
+            width="200px"
+          />
+        </div>
+        <h2>Application of Computing in Sceince, Engineering and Medicine</h2>
+        <ol>
+          <li>
+            <h4>Petroleum Reservoir Modeling:</h4>
+            <p>
+              Emeagwali's computation on the Connection Machine was specifically
+              applied to petroleum reservoir modeling. The ability to perform
+              complex simulations at an unprecedented speed had significant
+              implications for the oil and gas industry. It allowed for more
+              accurate predictions of reservoir behavior, optimizing extraction
+              processes.
+            </p>
+          </li>
+          <li>
+            <h4>Weather Forecasting:</h4>
+            <p>
+              Parallel computing has wide applications in weather forecasting
+              due to the complex and computationally intensive nature of climate
+              models. Emeagwali's work showcased the potential of parallel
+              processing for handling large-scale simulations, which is crucial
+              for accurate weather predictions.
+            </p>
+          </li>
+          <li>
+            <h4>Aerospace Engineering:</h4>
+            <p>
+              Parallel computing is extensively used in aerospace engineering
+              for tasks such as aerodynamic simulations, structural analysis,
+              and optimization. The ability to process vast amounts of data
+              simultaneously enhances the efficiency of these computations.
+            </p>
+          </li>
+          <li>
+            <h4>Medical Imaging and Research:</h4>
+            <p>
+              In medicine, parallel computing is employed in various
+              applications, including medical imaging. The ability to process
+              and analyze medical images quickly is essential for diagnostic
+              purposes. Parallel processing can significantly reduce the time
+              required for tasks such as MRI image reconstruction.
+            </p>
+          </li>
+          <li>
+            <h4>Drug Discovery and Genomic Research:</h4>
+            <p>
+              Parallel computing plays a crucial role in drug discovery and
+              genomic research, where large datasets need to be analyzed to
+              identify potential drug candidates or understand genetic patterns.
+              The speed and efficiency of parallel processing are invaluable in
+              these scientific endeavors.
+            </p>
+          </li>
+          <li>
+            <h4>Finite Element Analysis (FEA):</h4>
+            <p>
+              In engineering, particularly in fields like civil and structural
+              engineering, finite element analysis is a common application of
+              parallel computing. This technique is used to simulate and analyze
+              complex structures, and parallel processing accelerates the
+              computations involved.
+            </p>
+          </li>
+        </ol>
+      </section>
     </div>
 
     <footer>
       <div class="footer">
         <div>
-            <img src="images\PE logs.jpg" alt="logo" height="50px">
+          <img src="images\PE logs.jpg" alt="logo" height="50px" />
         </div>
         <div>
           <h3>Links</h3>
@@ -199,5 +307,6 @@
           });
       });
     </script>
+    <script src="Sidebar.js"></script>
   </body>
 </html>

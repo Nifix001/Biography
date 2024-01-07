@@ -16,20 +16,36 @@
     <header>
       <nav>
         <div>
-            <img src="images\PE logs.jpg" alt="logo" height="50px">
+          <img src="images\PE logs.jpg" alt="logo" height="50px" />
         </div>
         <ul>
           <a href="home.html"><li>Home</li></a>
           <div></div>
-          <a href="home.html#hero"><li>Hero</li></a>
+          <a href="#hero"><li>Hero</li></a>
           <div></div>
-          <a href="home.html#work"><li>Work</li></a>
+          <a href="#work"><li>Work</li></a>
           <div></div>
-          <a href="home.html#gallery"><li>Gallery</li></a>
+          <a href="#gallery"><li>Gallery</li></a>
           <div></div>
-          <a href="home.html#news"><li>Latest News</li></a>
+          <a href="#news"><li>Latest News</li></a>
         </ul>
-        <button id="contact">Contact</button>
+        <button id="contact">Contact Us</button>
+        <span id="more-options">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              stroke-width="1.5"
+            />
+          </svg>
+        </span>
       </nav>
     </header>
 
@@ -44,6 +60,7 @@
               type="text"
               id="email"
               placeholder="philipemeagwali@gmail.com"
+              autocomplete="email"
             />
           </div>
           <div class="contact-message">
@@ -55,53 +72,117 @@
       </div>
     </div>
 
+    <div id="sideBar" class="sideBar">
+      <div class="blackScreen"></div>
+      <div class="sideBar-content">
+        <span class="close-bar">&times;</span>
+        <ul>
+          <a href="home.html" id="homeLink"><li>Home</li></a>
+          <div></div>
+          <a href="#hero" id="heroLink"><li>Hero</li></a>
+          <div></div>
+          <a href="#work" id="workLink"><li>Work</li></a>
+          <div></div>
+          <a href="#gallery" id="galleryLink"><li>Gallery</li></a>
+          <div></div>
+          <a href="#news" id="newsLink"><li>Latest News</li></a>
+          <button id="contact">Contact Us</button>
+        </ul>
+      </div>
+    </div>
+
+    <div id="space"></div>
+
     <div class="content">
-        <section>
-          <h1>Philip Emeagwali's Influence on Africa</h1>
-            <div class="img"> 
-                <img src="images\philip_emeagwali_speaker_pan_african_conference_principia_college (1).jpg" alt="Young Phillip" width="300px">
-            </div>
-            <h2>Early Influence on Africa Tech Pioneers</h2>
-            <ul>
-                <li>
-                    <h4>Inspiration for Future Generations:</h4>
-                    <p>Emeagwali's achievements serve as an inspiration for aspiring technologists and scientists in Africa. His groundbreaking work in high-performance computing has demonstrated that individuals from the continent can make significant contributions to cutting-edge technologies.</p>
-                </li>
-                <li>
-                    <h4>Pioneer in African Tech Landscape:</h4>
-                    <p>Emeagwali is considered a pioneer in the African tech landscape. His success has helped challenge stereotypes and misconceptions about the capabilities of Africans in the field of advanced technology and scientific research.</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <div class="img"> 
-                <img src="images\philip_emeagwali_garfield_east_elementary_school_willingboro_new.jpg" alt="Young Phillip" width="300px">
-            </div>
-            <h2>Roles in Bridging the Digital Divide</h2>
-            <ul>
-                <li>
-                    <h4>Advocacy for Digital Inclusion:</h4>
-                    <p>Emeagwali has been an outspoken advocate for bridging the digital divide, emphasizing the importance of providing access to information technology in developing countries, including those in Africa. He has highlighted the transformative potential of technology in empowering communities.</p>
-                </li>
-                <li>
-                    <h4>Technology Education Initiatives:</h4>
-                    <p>Emeagwali has been involved in initiatives aimed at promoting technology education in Africa. By emphasizing the value of education in science, technology, engineering, and mathematics (STEM) fields, he encourages the next generation to pursue careers in technology.</p>
-                </li>
-                <li>
-                    <h4>Encouraging Local Innovation:</h4>
-                    <p>Emeagwali's influence extends to encouraging local innovation in Africa. By showcasing the possibilities of technological advancement through his own achievements, he contributes to a mindset shift that fosters belief in the potential of African talent to innovate and contribute globally.</p>
-                </li>
-                <li>
-                    <h4>Influence on Policy Discussions:</h4>
-                    <p>Through his public engagements and writings, Emeagwali has contributed to policy discussions on technology and development in Africa. His insights and experiences add a valuable perspective to conversations about how technology can be harnessed for economic growth and societal advancement.</p>
-                </li>
-            </ul>
-        </section>
+      <section>
+        <h1>Philip Emeagwali's Influence on Africa</h1>
+        <div class="img">
+          <img
+            src="images\philip_emeagwali_speaker_pan_african_conference_principia_college (1).jpg"
+            alt="Young Phillip"
+            width="300px"
+          />
+        </div>
+        <h2>Early Influence on Africa Tech Pioneers</h2>
+        <ul>
+          <li>
+            <h4>Inspiration for Future Generations:</h4>
+            <p>
+              Emeagwali's achievements serve as an inspiration for aspiring
+              technologists and scientists in Africa. His groundbreaking work in
+              high-performance computing has demonstrated that individuals from
+              the continent can make significant contributions to cutting-edge
+              technologies.
+            </p>
+          </li>
+          <li>
+            <h4>Pioneer in African Tech Landscape:</h4>
+            <p>
+              Emeagwali is considered a pioneer in the African tech landscape.
+              His success has helped challenge stereotypes and misconceptions
+              about the capabilities of Africans in the field of advanced
+              technology and scientific research.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="img">
+          <img
+            src="images\philip_emeagwali_garfield_east_elementary_school_willingboro_new.jpg"
+            alt="Young Phillip"
+            width="300px"
+          />
+        </div>
+        <h2>Roles in Bridging the Digital Divide</h2>
+        <ul>
+          <li>
+            <h4>Advocacy for Digital Inclusion:</h4>
+            <p>
+              Emeagwali has been an outspoken advocate for bridging the digital
+              divide, emphasizing the importance of providing access to
+              information technology in developing countries, including those in
+              Africa. He has highlighted the transformative potential of
+              technology in empowering communities.
+            </p>
+          </li>
+          <li>
+            <h4>Technology Education Initiatives:</h4>
+            <p>
+              Emeagwali has been involved in initiatives aimed at promoting
+              technology education in Africa. By emphasizing the value of
+              education in science, technology, engineering, and mathematics
+              (STEM) fields, he encourages the next generation to pursue careers
+              in technology.
+            </p>
+          </li>
+          <li>
+            <h4>Encouraging Local Innovation:</h4>
+            <p>
+              Emeagwali's influence extends to encouraging local innovation in
+              Africa. By showcasing the possibilities of technological
+              advancement through his own achievements, he contributes to a
+              mindset shift that fosters belief in the potential of African
+              talent to innovate and contribute globally.
+            </p>
+          </li>
+          <li>
+            <h4>Influence on Policy Discussions:</h4>
+            <p>
+              Through his public engagements and writings, Emeagwali has
+              contributed to policy discussions on technology and development in
+              Africa. His insights and experiences add a valuable perspective to
+              conversations about how technology can be harnessed for economic
+              growth and societal advancement.
+            </p>
+          </li>
+        </ul>
+      </section>
     </div>
     <footer>
       <div class="footer">
         <div>
-            <img src="images\PE logs.jpg" alt="logo" height="50px">
+          <img src="images\PE logs.jpg" alt="logo" height="50px" />
         </div>
         <div>
           <h3>Links</h3>
@@ -192,5 +273,6 @@
           });
       });
     </script>
+    <script src="Sidebar.js"></script>
   </body>
 </html>
