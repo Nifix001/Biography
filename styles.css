@@ -673,4 +673,11 @@ article {
     font-size: 14px;
     color: #000;
   }
+  .image-grid-container h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+  }
 }
