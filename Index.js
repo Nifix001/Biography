@@ -86,6 +86,12 @@ var span = document.getElementsByClassName("close")[0];
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("close-bar")[0];
 
+var homeLink = document.getElementById('homeLink');
+var heroLink = document.getElementById( 'heroLink');
+var workLink = document.getElementById('workLink');
+var galleryLink = document.getElementById('galleryLink');
+var newsLink = document.getElementById('newsLink');
+
 // Function to display the modal
 function showModal() {
     modal.style.display = "block";
@@ -113,7 +119,11 @@ btn.addEventListener("click", showModal);
 span.addEventListener("click", closeModal);
 sideBtn.addEventListener("click", showBar);
 span1.addEventListener("click", closeBar);
-
+homeLink.addEventListener("click", closeBar);
+heroLink.addEventListener("click", closeBar);
+workLink.addEventListener("click", closeBar);
+galleryLink.addEventListener("click", closeBar);
+newsLink.addEventListener("click", closeBar);
 
 
 // Close the modal if the user clicks outside of it
