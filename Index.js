@@ -108,7 +108,7 @@ function showBar() {
     bar.style.display = "block";
     window.scrollTo({
         top: 0,
-        behavior: "instant"
+        behavior: 'instant'
     })
 }
 
