@@ -551,6 +551,20 @@ article {
     background-color: #fff;
     color: #000;
     z-index: 21;
+    padding: 10px;
+  }
+  .sideBar-content span {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    font-size: 38px;
+  }
+  .sideBar-content ul {
+    margin-top: 80px;
+    list-style-type: none;
+  }
+  .sideBar-content ul a {
+    text-decoration: none;
   }
 
   #about,

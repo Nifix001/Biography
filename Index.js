@@ -129,6 +129,9 @@ window.addEventListener("click", function(event) {
         closeBar();
     }
 });
+
+
+
 $(document).ready(function () {
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("contact");
