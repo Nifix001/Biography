@@ -74,10 +74,17 @@ carousel.addEventListener("touchend", dragStop);
 
 // Get the modal and the button that opens it
 var modal = document.getElementById("myModal");
-var btn = document.getElementById("contact"); // Assuming your Contact button is a <button> element
+var btn = document.getElementById("contact"); // 
+
+// Get the side bar and the button that opens it
+var bar = document.getElementById("sideBar");
+var sideBtn = document.getElementById("more-options"); //
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close-bar")[0];
 
 // Function to display the modal
 function showModal() {
@@ -89,14 +96,37 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+
+// Function to display the side bar
+function showBar() {
+    bar.style.display = "block";
+}
+
+// Function to close the side bar
+function closeBar() {
+    bar.style.display = "none";
+}
+
+
 // Event listeners
 btn.addEventListener("click", showModal);
 span.addEventListener("click", closeModal);
+sideBtn.addEventListener("click", showBar);
+span1.addEventListener("click", closeBar);
+
+
 
 // Close the modal if the user clicks outside of it
 window.addEventListener("click", function(event) {
     if (event.target == modal) {
         closeModal();
+    }
+});
+
+// Close the modal if the user clicks outside of it
+window.addEventListener("click", function(event) {
+    if (event.target == bar) {
+        closeBar();
     }
 });
 $(document).ready(function () {
