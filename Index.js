@@ -106,6 +106,10 @@ function closeModal() {
 // Function to display the side bar
 function showBar() {
     bar.style.display = "block";
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    })
 }
 
 // Function to close the side bar
