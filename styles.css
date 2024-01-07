@@ -366,15 +366,14 @@ article {
   margin-left: 0px;
 }
 .card-container {
-  display: flex;
-  flex-direction: row;
+  display: block;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
 }
 
 .card {
-  width: 300px;
+  width: 500px;
   height: 400px;
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -383,11 +382,12 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  margin: auto;
 }
 .card img {
+  width: 500px;
+  object-fit: fill;
   aspect-ratio: square;
-  object-fit: cover;
   image-rendering: pixelated;
 }
 
@@ -413,6 +413,7 @@ article {
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
+  margin: auto;
 }
 .card-content button a {
   text-decoration: none;
@@ -641,6 +642,7 @@ article {
     left: 160px;
     font-size: 8px;
   }
+
 
   .content h1 {
     text-align: center;
