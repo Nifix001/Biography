@@ -86,7 +86,7 @@ nav button:hover {
 
 footer,
 .footer {
-  background-color: darkorchid;
+  background-color: #ff7c99;
   padding: 20px 8px;
   display: flex;
   /* flex-direction: row;
@@ -136,7 +136,8 @@ footer p,
 }
 
 section {
-  background-color: #8ab4f3;
+  /* background-color: #8ab4f3; */
+  background-color: #fff;
   padding: 60px 20px;
   margin-top: 3px;
 }
@@ -376,8 +377,8 @@ article {
   width: 350px;
   height: 400px;
   background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(7, 5, 5, 0.6);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,10 +391,12 @@ article {
   object-fit: fill;
   aspect-ratio: square;
   image-rendering: pixelated;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 40px;
 }
 
 .card-content {
-  padding: 20px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
