@@ -86,7 +86,7 @@ nav button:hover {
 
 footer,
 .footer {
-  background-color: #ff7c99;
+  background-color: rgb(17, 16, 16);
   padding: 20px 8px;
   display: flex;
   /* flex-direction: row;
@@ -410,8 +410,8 @@ article {
 }
 
 .card-content button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #e0b982;
+  color: #000;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -607,7 +607,7 @@ article {
   }
 
   section {
-    background-color: #8ab4f3;
+    background-color: #fff;
     padding: 50px 20px;
     margin-top: 3px;
   }
@@ -627,7 +627,7 @@ article {
   }
 
   .footer {
-    background-color: darkorchid;
+    background-color: rgb(17, 16, 16);
     padding: 20px 2px;
     display: flex;
     gap: 10px;
