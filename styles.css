@@ -493,6 +493,10 @@ article {
   align-items: center;
 }
 
+#personal{
+  height:100vh;
+}
+
 @media screen and (max-width: 900px) {
   .carousel img {
     width: calc(100% / 2);
